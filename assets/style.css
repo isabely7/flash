@@ -1,16 +1,21 @@
 :root{
-    --text-color:#DBE4EF;
+    --text-color: #DBE4EF;
     --card-front-color: #144480;
-    --cardback-front: #00F4BF;
+    --card-back-color: #00F4BF;
 }
 
+
 body{
-    background:url('img/bg-desktop.webp');
+    background:url(flashcard-imagens/img/bg-desktop.webp);
     font-family: "Bai Jumjeree", sans-serif;
 }
 
 #container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
 }
 
 .cartao{
@@ -40,36 +45,41 @@ body{
     font-size: 1vw;
     backface-visibility: hidden;
 }
+
 .cartao__conteudo p{
     margin-top: 1rem;
     padding: 2rem;
     margin-top: 4rem;
 }
+ 
 
-.cartao__conteudo__pergunta p{
+.cartao__conteudo__pergunta p {
     color: var(--text-color);
     font-weight: 500;
 }
 
 .cartao__conteudo__resposta p {
     color: var(--card-back-color);
-    font-weight: 700                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+    font-weight: 700;
 }
 
-.cartao:hover .cartao__conteudo{
+.cartao:hover .cartao__conteudo {
     transform: rotateY(180deg);
 }
 
-.cartao__conteudo__pergunta, .cartao__conteudo__resposta{
+.cartao__conteudo__pergunta,
+.cartao__conteudo__resposta {
     backface-visibility: hidden;
     position: absolute;
     height: 100%;
     width: 100%;
+
 }
 
-.cartao__conteudo__resposta{
+.cartao__conteudo__resposta {
     transform: rotateY(180deg);
 }
+
 
 footer{
     background-color: black;
