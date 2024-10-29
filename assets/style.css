@@ -101,7 +101,7 @@ footer p {
 
 @media (max-width: 560px){
     body {
-        background: url('flashcard-imagens/img/bg-mobile.webp');
+        background: rgb(13, 1, 54);
     }
     .cartao {
         flex: 1 0 calc(100% - 1rem);
